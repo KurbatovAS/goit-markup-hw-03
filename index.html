@@ -20,20 +20,26 @@
     <!-- чердачок -->
 
     <header class="page-header">
-      <div class="container main-nav">
-        <nav class="nav-flex">
-          <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+      <div class="container page-header__box">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"><span class="logo__accent">Web</span>Studio</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link">Портфолио</a>
+            </li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-us">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        <ul class="contacts-header">
+          <li class="contacts-header__item">
+            <a href="mailto:info@devstudio.com" class="contacts-header__link">info@devstudio.com</a>
           </li>
-          <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="contacts-header__item">
+            <a href="tel:+380961111111" class="contacts-header__link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -43,40 +49,42 @@
     <main>
       <!-- блок - герой -->
 
-      <section class="hero">
-        <div class="container hero-center">
-          <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+      <section class="hero hero--container">
+        <div class="container">
+          <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button">Заказать услугу</button>
         </div>
       </section>
 
       <!-- чем мы лучше других -->
 
-      <section class="avantages">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="avantages-list">
-            <li class="avantages-list-items">
-              <h3>Внимание к деталям</h3>
-              <p>
+          <ul class="avantages__list">
+            <li class="avantages__items">
+              <h3 class="avantages__heading">Внимание к деталям</h3>
+              <p class="avantages__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="avantages-list-items">
-              <h3>Пунктуальность</h3>
-              <p>
+            <li class="avantages__items">
+              <h3 class="avantages__heading">Пунктуальность</h3>
+              <p class="avantages__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="avantages-list-items">
-              <h3>Планирование</h3>
-              <p>
+            <li class="avantages__items">
+              <h3 class="avantages__heading">Планирование</h3>
+              <p class="avantages__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="avantages-list-items">
-              <h3>Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <li class="avantages__items">
+              <h3 class="avantages__heading">Современные технологии</h3>
+              <p class="avantages__text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
@@ -84,11 +92,11 @@
 
       <!-- направления нашей работы -->
 
-      <section class="activities">
+      <section class="activities section">
         <div class="container">
-          <h2 class="activities-header">Чем мы занимаемся</h2>
-          <ul class="activities-list">
-            <li class="activities-list-item">
+          <h2 class="section__heading">Чем мы занимаемся</h2>
+          <ul class="activities__list">
+            <li class="activities__item">
               <img
                 src="./images/work-1.jpg"
                 alt="прорабатывание алгоритмов работы"
@@ -96,7 +104,7 @@
                 height="294"
               />
             </li>
-            <li class="activities-list-item">
+            <li class="activities__item">
               <img
                 src="./images/work-2.jpg"
                 alt="создание вариантов оформления"
@@ -104,7 +112,7 @@
                 height="294"
               />
             </li>
-            <li class="activities-list-item">
+            <li class="activities__item">
               <img src="./images/work-3.jpg" alt="подбор цветовой гаммы" width="370" height="294" />
             </li>
           </ul>
@@ -113,53 +121,57 @@
 
       <!-- наши сотрудники -->
 
-      <section class="personal">
+      <section class="personal section">
         <div class="container">
-          <h2 class="personal-header">Наша команда</h2>
-          <ul class="personal-list">
-            <li class="personal-list-item">
+          <h2 class="section__heading">Наша команда</h2>
+          <ul class="personal__list">
+            <li class="personal__item">
               <img
-                class="personal-photo"
                 src="./images/photo-1.jpg"
                 alt="фотография Игоря Демьяненко"
                 width="270"
                 height="260"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <div class="personal__label">
+                <h3 class="personal__name">Игорь Демьяненко</h3>
+                <p class="personal__position">Product Designer</p>
+              </div>
             </li>
-            <li class="personal-list-item">
+            <li class="personal__item">
               <img
-                class="personal-photo"
                 src="./images/photo-2.jpg"
                 alt="фотография Ольги Репиной"
                 width="270"
                 height="260"
               />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <div class="personal__label">
+                <h3 class="personal__name">Ольга Репина</h3>
+                <p class="personal__position">Frontend Developer</p>
+              </div>
             </li>
-            <li class="personal-list-item">
+            <li class="personal__item">
               <img
-                class="personal-photo"
                 src="./images/photo-3.jpg"
                 alt="фотография Николая Тарасова"
                 width="270"
                 height="260"
               />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <div class="personal__label">
+                <h3 class="personal__name">Николай Тарасов</h3>
+                <p class="personal__position">Marketing</p>
+              </div>
             </li>
-            <li class="personal-list-item">
+            <li class="personal__item">
               <img
-                class="personal-photo"
                 src="./images/photo-4.jpg"
                 alt="фотография Михаила Ермакова"
                 width="270"
                 height="260"
               />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <div class="personal__label">
+                <h3 class="personal__name">Михаил Ермаков</h3>
+                <p class="personal__position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -168,16 +180,20 @@
 
     <!-- погребок -->
 
-    <footer class="footer-bgc">
+    <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo"
-          ><span>Web</span><span class="footer-logo">Studio</span></a
+        <a href="./index.html" class="logo logo--footer"
+          ><span class="logo__accent">Web</span>Studio</a
         >
         <address class="address">
-          <ul class="address-list">
-            <li class="kiev">г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <ul class="address__list">
+            <li class="address__item address__item--line-color">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="address__item">
+              <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
